@@ -21,13 +21,17 @@ if (productType === 'sports') {
   console.log('Found sports product type.');
 }
 
-// Using Enums
-enum ProductType {
+// Enum
+
+const enum ProductType { // OR enum ProductType
   Sports,
   HomeGoods,
-  Groceries,
+  Groceries
 }
-let pt = ProductType.Sports;
-if (pt === ProductType.Sports) {
-  console.log('Found sports product type.');
+
+console.log('here', ProductType.Sports);
+
+const pt = 0; // OR const pt = ProductType.Sports;
+if(pt === ProductType.Sports) {
+  console.log('it\'s equal');
 }
